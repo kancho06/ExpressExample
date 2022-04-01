@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 // routing function 
 var router = express.Router();
 // middleware 처럼 모든 요청을 받는 것이 아닌 특정 패스의 요청만 받는다.
-// /:name 하면 파라미터처럼 넘어온다.
+// /:name 하면 파라미터처럼 넘어온다. -> URL 파라미터
 router.route('/process/login/:name').post(function (req, res) {
     console.log('/process/login/:name 라우팅 함수에서 받음.');
 

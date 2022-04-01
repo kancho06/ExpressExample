@@ -42,7 +42,8 @@ app.use(function(req, res, next) {
 
 
 
-var sever = http.createServer(app).listen(app.get('port'), function() 
+var server = http.createServer(app).listen(app.get('port'), function() 
 {
     console.log('express로 웹 서버를 실행함 : ' + app.get('port'));
 });
+
