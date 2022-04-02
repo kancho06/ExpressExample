@@ -19,7 +19,9 @@ app.use('/public', static(path.join(__dirname, 'public')));
 
 // 이건 POST 방식
 // POST 는 헤더가 아니라 바디에 넣기 때문에 bodyParser를 쓴다.
+// body-parser 를 이용해 application/x-www-form-urlencoded 파싱
 app.use(bodyParser.urlencoded({extended:false}));
+// body-parser 를 이용해 application/json 파싱
 app.use(bodyParser.json());
 
 
